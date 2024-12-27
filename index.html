@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>
+      Frontend Mentor | Huddle landing page with single introductory section
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              violet: "hsl(257, 40%, 49%)",
+              "soft-magenta": "hsl(300, 69%, 71%)",
+            },
+            fontFamily: {
+              poppins: ["Poppins", "serif"],
+              "open-sans": ["Open Sans", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <main
+      class="min-h-screen bg-[url('./assets/images/bg-desktop.svg')] bg-no-repeat bg-cover bg-center bg-violet pt-6 sm:pt-12 px-7 sm:px-14 xl:px-20 pb-10"
+    >
+      <img
+        class="w-36 md:w-[13rem] cursor-pointer"
+        src="./assets/images/logo.svg"
+        alt="logo"
+      />
+      <div class="flex mt-10 xl:mt-20 gap-x-12 flex-col md:flex-row">
+        <img
+          class="sm:w-1/2 xl:w-[50vw] object-contain mx-auto"
+          src="./assets/images/illustration-mockups.svg"
+          alt="illustration-mockups"
+        />
+        <div
+          class="text-white pt-12 flex flex-col gap-y-6 items-center md:items-start"
+        >
+          <h1
+            class="text-2xl sm:text-3xl md:text-4xl font-semibold font-poppins md:leading-[3rem] xl:leading-[3.5rem] text-center md:text-start"
+          >
+            <span class="block">Build The Community</span>
+            <span class="block">Your Fans Will Love</span>
+          </h1>
+          <h2
+            class="md:text-lg opacity-70 font-open-sans text-center md:text-start"
+          >
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </h2>
+          <button
+            class="bg-white text-violet px-14 md:px-16 py-2 sm:py-3 rounded-full font-poppins md:text-lg shadow-xl hover:bg-soft-magenta hover:text-white hover:shadow-2xl transition duration-300"
+          >
+            Register
+          </button>
+        </div>
+      </div>
+      <ul class="flex justify-center md:justify-end items-center mt-12 gap-x-4">
+        <li>
+          <a
+            class="border w-8 sm:w-10 h-8 sm:h-10 flex items-center justify-center rounded-full hover:bg-soft-magenta hover:border-soft-magenta transition duration-300"
+            href="#"
+          >
+            <img
+              class="w-4 sm:w-auto h-4 sm:h-auto"
+              src="./assets/images/facebook-icon.svg"
+              alt="facebook-icon"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            class="border w-8 sm:w-10 h-8 sm:h-10 flex items-center justify-center rounded-full hover:bg-soft-magenta hover:border-soft-magenta transition duration-300"
+            href="#"
+          >
+            <img
+              class="w-4 sm:w-auto h-4 sm:h-auto"
+              src="./assets/images/twitter-icon.svg"
+              alt="twitter-icon"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            class="border w-8 sm:w-10 h-8 sm:h-10 flex items-center justify-center rounded-full hover:bg-soft-magenta hover:border-soft-magenta transition duration-300"
+            href="#"
+          >
+            <img
+              class="w-4 sm:w-auto h-4 sm:h-auto"
+              src="./assets/images/instagram-icon.svg"
+              alt="instagram-icon"
+            />
+          </a>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
